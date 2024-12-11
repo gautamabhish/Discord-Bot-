@@ -1,4 +1,5 @@
-# Discord Bot
+# Discord Bot 
+**[Install Pre-built](https://discord.com/oauth2/authorize?client_id=1316319437527453727) **
 
 A simple guide to set up and configure a Discord Bot for your server.
 
