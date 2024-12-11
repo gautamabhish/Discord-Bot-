@@ -5,11 +5,12 @@
   "main": "index.js.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main.js",
-    "start" : "node main.js", 
-    "build" : "npm install && npm --prefix Client && npm run build --prefix Client"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "dev": "nodemon main.js",
+  "start": "node main.js",
+  "build": "npm install && npm install --prefix Client && npm run build --prefix Client"
+}
+,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gautamabhish/Discord-Bot-.git"
