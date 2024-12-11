@@ -5,7 +5,7 @@ import { BlueberryInteraction } from './controllers/BlueberryInteraction.js';
 import NewMember from './controllers/memberAdd.js';
 dotenv.config();
  Blueberry();
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent], });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent,GatewayIntentBits.GuildMembers], });
 // Blueberry();
 client.on('ready', () => {
   
