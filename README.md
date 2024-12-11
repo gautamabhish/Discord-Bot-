@@ -24,7 +24,7 @@ A simple guide to set up and configure a Discord Bot for your server.
 
 ## Usage
 
-1. Clone or download the repository of your choice.
+1. Clone or download the repository .
 2. Customize the bot's configuration and features to suit your needs.
 3. Deploy the bot to your server and start managing it!
 
