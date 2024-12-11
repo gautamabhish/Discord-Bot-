@@ -8,11 +8,11 @@ A simple guide to set up and configure a Discord Bot for your server.
 
 1. **Enable Developer Mode**  
    - Go to your Discord server settings and enable *Developer Mode*.  
-     ![Enable Developer Mode](image.png)
+     ![Enable Developer Mode](./assets/image.png)
 
 2. **Create a New Application**  
    - Visit the [Discord Developer Portal](https://discord.com/developers) and create a new application.  
-     ![Create a New Application](image-1.png)
+     ![Create a New Application](./assets/image-1.png)
 
 3. **Set Up OAuth2 for Bot Permissions**  
    - Navigate to the *OAuth2* page within the Developer Portal.  
