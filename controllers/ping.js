@@ -1,23 +1,35 @@
-import { REST, Routes } from 'discord.js';
-import dotenv, { configDotenv } from 'dotenv'
- const  Blueberry = async()=>{
-const commands = [
-  {
-    name: 'blueberry',
-    description: 'is not blue',
-  },
-];
+import { REST, Routes, SlashCommandBuilder } from 'discord.js';
+import dotenv from 'dotenv';
 
-const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
+dotenv.config();
 
-try {
-  console.log('Started refreshing application (/) commands.');
+const Blueberry = async () => {
+  
 
-  await rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands });
+  const commands = [
+    new SlashCommandBuilder()
+      .setName('blueberry')
+      .setDescription('Ask freely!')
+      .addStringOption(option =>
+        option.setName('chat')
+          .setDescription('Your question')
+          .setRequired(true)
+      ),
+  ].map(command => command.toJSON());
 
-  console.log('Successfully reloaded application (/) commands.');
-} catch (error) {
-  console.error(error);
-}
-}
-export  {Blueberry};
+  const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
+
+  try {
+    console.log('Started refreshing application (/) commands.');
+
+    
+    await rest.put(
+      Routes.applicationCommands(process.env.CLIENT_ID), 
+      { body: commands }
+    );
+  } catch (error) {
+    console.error('Error registering commands:', error);
+  }
+};
+
+export { Blueberry };

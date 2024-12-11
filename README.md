@@ -4,7 +4,7 @@ A simple guide to set up and configure a Discord Bot for your server.
 
 ---
 
-## Instructions for Configuration
+## Instructions for Configuration for your own API Key 
 
 1. **Enable Developer Mode**  
    - Go to your Discord server settings and enable *Developer Mode*.  
@@ -29,3 +29,6 @@ A simple guide to set up and configure a Discord Bot for your server.
 3. Deploy the bot to your server and start managing it!
 
 Happy bot building! 🎉
+
+
+
