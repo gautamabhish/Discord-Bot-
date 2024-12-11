@@ -1,7 +1,6 @@
 import { Client, GatewayIntentBits } from 'discord.js';
 import dotenv from "dotenv";
 import { Blueberry } from './controllers/ping.js';
-import { aiPrompt } from './controllers/aiModel.js';
 import { BlueberryInteraction } from './controllers/BlueberryInteraction.js';
 import NewMember from './controllers/memberAdd.js';
 dotenv.config();
